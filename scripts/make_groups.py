@@ -19,13 +19,18 @@ def make_groups(df, N):
     return df
 
 
-if __name__ == "__main__":
-    np.random.seed(42)
-    wb = pd.read_excel("Advanced Python Emails.xlsx").drop(columns=["Unnamed: 2"])
+def load_data(path):
+    wb = pd.read_excel(path).drop(columns=["Unnamed: 2"])
     wb.columns = wb.iloc[2]
     wb.columns.name = None
     wb = wb.iloc[3:].reset_index(drop=True)
+    return wb
 
-    for group_id, group in make_groups(wb, 8).groupby("group"):
-        assert len(group) >= 6
+
+if __name__ == "__main__":
+    np.random.seed(42)
+    wb = load_data("Advanced Python Emails.xlsx")
+
+    for group_id, group in make_groups(wb, 5).groupby("group"):
+        assert len(group) >= len(wb) // 5
         print(group, end="\n-----------\n")
