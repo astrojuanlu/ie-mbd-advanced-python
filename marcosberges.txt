@@ -1,3 +1,0 @@
-name: marcos berges
-github username: "marcosberges"
-
