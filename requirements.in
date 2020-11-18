@@ -1,3 +1,4 @@
 black==20.8b1
-jupyterlab
+# jupyterlab  # Causing problems in Binder?
+notebook
 rise
