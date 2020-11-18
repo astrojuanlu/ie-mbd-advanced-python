@@ -4,6 +4,10 @@
 
 "Advanced Python" subject from the Master in Big Data @ IE.
 
+## Try in the cloud!
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/astrojuanlu/ie-mbd-advanced-python/HEAD)
+
 ## Installation
 
 ```
