@@ -1,4 +1,4 @@
-black==20.8b1
+black==21.4b2
 # jupyterlab  # Causing problems in Binder?
 notebook
 rise
