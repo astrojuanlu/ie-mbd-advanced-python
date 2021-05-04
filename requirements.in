@@ -1,3 +1,4 @@
 black==21.4b2
+jupyterlab
 notebook
 rise
